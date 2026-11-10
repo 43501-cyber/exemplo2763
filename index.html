@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Upgrade</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-overlay"></div>
+
+    <header>
+        <div class="logo">SYNAPSE<span>//LINK</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#upgrades">Upgrades</a>
+            <a href="#status">Sistema</a>
+        </nav>
+        <button class="btn-hud" onclick="ativarHUD()">ATIVAR HUD</button>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="badge">Disponível em 2056</div>
+            <h1>Evolua sua mente. <br><span class="gradient-text">Atualize sua humanidade.</span></h1>
+            <p>O Synapse Link é o primeiro bio-implante cortical nanotecnológico do mundo. Expanda sua memória, processe dados em tempo real e mude a forma como você percebe a realidade.</p>
+            
+            <div class="cta-group">
+                <a href="#upgrades" class="btn-primary">Explorar Módulos</a>
+                <a href="#status" class="btn-secondary">Simular Conexão</a>
+            </div>
+        </section>
+
+        <section id="upgrades" class="features">
+            <h2>Módulos de Upgrade</h2>
+            <div class="cards-container">
+                <div class="card" onclick="interagirCard(this)">
+                    <div class="card-icon">🧠</div>
+                    <h3>Hiper-Memória</h3>
+                    <p>Expansão de armazenamento cerebral de curto e longo prazo. Lembre-se de cada detalhe instantaneamente.</p>
+                    <span class="status-load">Disponibilidade: 98%</span>
+                </div>
+                <div class="card" onclick="interagirCard(this)">
+                    <div class="card-icon">🌐</div>
+                    <h3>Linguagem Quântica</h3>
+                    <p>Tradução e fluência imediata em mais de 400 idiomas e dialetos universais via input neural direto.</p>
+                    <span class="status-load">Disponibilidade: 100%</span>
+                </div>
+                <div class="card" onclick="interagirCard(this)">
+                    <div class="card-icon">⚡</div>
+                    <h3>Foco Cognitivo</h3>
+                    <p>Bloqueie distrações externas e processe múltiplas cadeias de pensamento lógico ao mesmo tempo.</p>
+                    <span class="status-load">Disponibilidade: 85%</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2056 Synapse Link S.A. Todos os direitos cibernéticos reservados.</p>
+    </footer>
+
+    <script>
+        function ativarHUD() {
+            document.body.classList.toggle('hud-active');
+            alert('Interface HUD Neural inicializada no seu córtex visual simulado!');
+        }
+
+        function interagirCard(card) {
+            card.classList.toggle('selected-upgrade');
+        }
+    </script>
+</body>
+</html>
